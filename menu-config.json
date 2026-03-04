@@ -45,6 +45,7 @@
         { "label": "Pork", "href": "/pork-dehydrated" }
       ]
     },
+    { "label": "Bone Broth", "href": "/bone-broth" },
     { "label": "Treats", "href": "/treats" },
     { "label": "Our Story", "href": "/our-story" }
   ]

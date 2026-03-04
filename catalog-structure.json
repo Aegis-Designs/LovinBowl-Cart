@@ -14,12 +14,12 @@
     "REG": { "name": "Regular", "sizes": ["16", "32"], "priceAddon": 0 },
     "PUP": { "name": "Puppy", "sizes": ["16", "32"], "priceAddon": 0 },
     "GF":  { "name": "Grain Free", "sizes": ["16", "32"], "priceAddon": 0 },
-    "DH":  { "name": "Dehydrated", "sizes": ["32"], "priceAddon": 5.00 }
+    "DH":  { "name": "Dehydrated", "sizes": ["32"], "priceAddon": 0 }
   },
   "basePricing": {
-    "note": "32oz (2 lb) base prices from current store; 16oz estimated at ~60%",
-    "BEEF": { "32": 24.00, "16": 14.00 },
-    "CHKN": { "32": 24.00, "16": 14.00 },
+    "note": "Flat pricing: 16oz = $15, 32oz = $25 across all proteins and diet types",
+    "BEEF": { "32": 25.00, "16": 15.00 },
+    "CHKN": { "32": 25.00, "16": 15.00 },
     "LAMB": { "32": 25.00, "16": 15.00 },
     "SLMN": { "32": 25.00, "16": 15.00 },
     "PORK": { "32": 25.00, "16": 15.00 }
@@ -41,8 +41,8 @@
           "name": "Regular",
           "slug": "beef-regular",
           "products": [
-            { "name": "Lovin' Bowl Beef Regular 16oz", "sku": "LB-BEEF-REG-16", "size": "16oz", "weight": 1.0, "price": 14.00 },
-            { "name": "Lovin' Bowl Beef Regular 32oz", "sku": "LB-BEEF-REG-32", "size": "32oz", "weight": 2.0, "price": 24.00 }
+            { "name": "Lovin' Bowl Beef Regular 16oz", "sku": "LB-BEEF-REG-16", "size": "16oz", "weight": 1.0, "price": 15.00 },
+            { "name": "Lovin' Bowl Beef Regular 32oz", "sku": "LB-BEEF-REG-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
           ]
         },
         {
@@ -57,15 +57,15 @@
           "name": "Grain Free",
           "slug": "beef-grain-free",
           "products": [
-            { "name": "Lovin' Bowl Beef Grain Free 16oz", "sku": "LB-BEEF-GF-16", "size": "16oz", "weight": 1.0, "price": 14.00 },
-            { "name": "Lovin' Bowl Beef Grain Free 32oz", "sku": "LB-BEEF-GF-32", "size": "32oz", "weight": 2.0, "price": 24.00 }
+            { "name": "Lovin' Bowl Beef Grain Free 16oz", "sku": "LB-BEEF-GF-16", "size": "16oz", "weight": 1.0, "price": 15.00 },
+            { "name": "Lovin' Bowl Beef Grain Free 32oz", "sku": "LB-BEEF-GF-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
           ]
         },
         {
           "name": "Dehydrated",
           "slug": "beef-dehydrated",
           "products": [
-            { "name": "Lovin' Bowl Beef Dehydrated 32oz", "sku": "LB-BEEF-DH-32", "size": "32oz", "weight": 2.0, "price": 29.00 }
+            { "name": "Lovin' Bowl Beef Dehydrated 32oz", "sku": "LB-BEEF-DH-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
           ]
         }
       ]
@@ -78,8 +78,8 @@
           "name": "Regular",
           "slug": "chicken-regular",
           "products": [
-            { "name": "Lovin' Bowl Chicken Regular 16oz", "sku": "LB-CHKN-REG-16", "size": "16oz", "weight": 1.0, "price": 14.00 },
-            { "name": "Lovin' Bowl Chicken Regular 32oz", "sku": "LB-CHKN-REG-32", "size": "32oz", "weight": 2.0, "price": 24.00 }
+            { "name": "Lovin' Bowl Chicken Regular 16oz", "sku": "LB-CHKN-REG-16", "size": "16oz", "weight": 1.0, "price": 15.00 },
+            { "name": "Lovin' Bowl Chicken Regular 32oz", "sku": "LB-CHKN-REG-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
           ]
         },
         {
@@ -94,15 +94,15 @@
           "name": "Grain Free",
           "slug": "chicken-grain-free",
           "products": [
-            { "name": "Lovin' Bowl Chicken Grain Free 16oz", "sku": "LB-CHKN-GF-16", "size": "16oz", "weight": 1.0, "price": 14.00 },
-            { "name": "Lovin' Bowl Chicken Grain Free 32oz", "sku": "LB-CHKN-GF-32", "size": "32oz", "weight": 2.0, "price": 24.00 }
+            { "name": "Lovin' Bowl Chicken Grain Free 16oz", "sku": "LB-CHKN-GF-16", "size": "16oz", "weight": 1.0, "price": 15.00 },
+            { "name": "Lovin' Bowl Chicken Grain Free 32oz", "sku": "LB-CHKN-GF-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
           ]
         },
         {
           "name": "Dehydrated",
           "slug": "chicken-dehydrated",
           "products": [
-            { "name": "Lovin' Bowl Chicken Dehydrated 32oz", "sku": "LB-CHKN-DH-32", "size": "32oz", "weight": 2.0, "price": 29.00 }
+            { "name": "Lovin' Bowl Chicken Dehydrated 32oz", "sku": "LB-CHKN-DH-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
           ]
         }
       ]
@@ -139,7 +139,7 @@
           "name": "Dehydrated",
           "slug": "lamb-dehydrated",
           "products": [
-            { "name": "Lovin' Bowl Lamb Dehydrated 32oz", "sku": "LB-LAMB-DH-32", "size": "32oz", "weight": 2.0, "price": 30.00 }
+            { "name": "Lovin' Bowl Lamb Dehydrated 32oz", "sku": "LB-LAMB-DH-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
           ]
         }
       ]
@@ -176,7 +176,7 @@
           "name": "Dehydrated",
           "slug": "salmon-dehydrated",
           "products": [
-            { "name": "Lovin' Bowl Salmon Dehydrated 32oz", "sku": "LB-SLMN-DH-32", "size": "32oz", "weight": 2.0, "price": 30.00 }
+            { "name": "Lovin' Bowl Salmon Dehydrated 32oz", "sku": "LB-SLMN-DH-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
           ]
         }
       ]
@@ -213,7 +213,7 @@
           "name": "Dehydrated",
           "slug": "pork-dehydrated",
           "products": [
-            { "name": "Lovin' Bowl Pork Dehydrated 32oz", "sku": "LB-PORK-DH-32", "size": "32oz", "weight": 2.0, "price": 30.00 }
+            { "name": "Lovin' Bowl Pork Dehydrated 32oz", "sku": "LB-PORK-DH-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
           ]
         }
       ]
@@ -227,6 +227,14 @@
         { "name": "Handmade Cookies - Beef", "sku": "LB-TREAT-COOKIE-BEEF", "price": 8.00 },
         { "name": "Pup Cake (Small)", "sku": "LB-TREAT-CAKE-SM", "price": 5.00 },
         { "name": "Pup Cake (Large)", "sku": "LB-TREAT-CAKE-LG", "price": 7.00 }
+      ]
+    },
+    {
+      "name": "Bone Broth",
+      "slug": "bone-broth",
+      "subcategories": [],
+      "products": [
+        { "name": "Lovin' Bowl Beef Bone Broth 32oz", "sku": "LB-BEEF-BB-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
       ]
     }
   ]

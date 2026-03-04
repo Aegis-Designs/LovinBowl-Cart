@@ -6,7 +6,7 @@ This guide walks through creating the full product catalog in the Shift4Shop adm
 
 Create these categories in **Products → Categories → Add New**:
 
-### Top-Level Categories (6 total)
+### Top-Level Categories (7 total)
 
 | # | Category Name | URL Slug | Sort Order |
 |---|--------------|----------|------------|
@@ -14,8 +14,9 @@ Create these categories in **Products → Categories → Add New**:
 | 2 | Puppy | puppy | 2 |
 | 3 | Grain Free | grain-free | 3 |
 | 4 | Dehydrated | dehydrated | 4 |
-| 5 | Treats | treats | 5 |
-| 6 | Our Story | our-story | 6 |
+| 5 | Bone Broth | bone-broth | 5 |
+| 6 | Treats | treats | 6 |
+| 7 | Our Story | our-story | 7 |
 
 ### Sub-Categories (5 per diet, 20 total)
 
@@ -61,35 +62,23 @@ For **each** diet category (Regular, Puppy, Grain Free, Dehydrated), create thes
 | Grain Free | 16oz, 32oz |
 | Dehydrated | **32oz only** |
 
-### Pricing (from current store)
+### Pricing
 
-**32oz (2 lbs) — base price:**
+**Simplified uniform pricing** — all proteins and diet types are the same price per size:
 
-| Protein | Regular | Puppy | Grain Free | Dehydrated (+$5) |
-|---------|---------|-------|------------|-------------------|
-| Beef | $24.00 | $25.00 | $24.00 | $29.00 |
-| Chicken | $24.00 | $25.00 | $24.00 | $29.00 |
-| Lamb | $25.00 | $25.00 | $25.00 | $30.00 |
-| Salmon | $25.00 | $25.00 | $25.00 | $30.00 |
-| Pork | $25.00 | $25.00 | $25.00 | $30.00 |
+| Size | Price |
+|------|-------|
+| 16oz (1 lb) | **$15.00** |
+| 32oz (2 lbs) | **$25.00** |
 
-**16oz (1 lb) — estimated pricing:**
-
-| Protein | Regular | Puppy | Grain Free |
-|---------|---------|-------|------------|
-| Beef | $14.00 | $15.00 | $14.00 |
-| Chicken | $14.00 | $15.00 | $14.00 |
-| Lamb | $15.00 | $15.00 | $15.00 |
-| Salmon | $15.00 | $15.00 | $15.00 |
-| Pork | $15.00 | $15.00 | $15.00 |
-
-> **Note:** 16oz pricing is estimated at ~60% of 32oz. Verify with actual store pricing.
+This applies to all proteins (Beef, Chicken, Lamb, Salmon, Pork) across all diet types (Regular, Puppy, Grain Free, Dehydrated), as well as Bone Broth.
 
 ### Product Count
 
 - 5 proteins × 3 diet types × 2 sizes = **30 products**
 - 5 proteins × 1 dehydrated × 1 size = **5 products**
-- **Total: 35 diet products** + 4 Treats = **39 products**
+- 1 Bone Broth product = **1 product**
+- **Total: 36 diet/broth products** + 4 Treats = **40 products**
 
 ### Creating Each Product
 
@@ -141,24 +130,24 @@ Go to **Products → Add New Product** for each:
 ### Beef (7 products)
 | Product | SKU | Size | Price | Category |
 |---------|-----|------|-------|----------|
-| Lovin' Bowl Beef Regular 16oz | LB-BEEF-REG-16 | 16oz | $14.00 | Beef > Regular |
-| Lovin' Bowl Beef Regular 32oz | LB-BEEF-REG-32 | 32oz | $24.00 | Beef > Regular |
+| Lovin' Bowl Beef Regular 16oz | LB-BEEF-REG-16 | 16oz | $15.00 | Beef > Regular |
+| Lovin' Bowl Beef Regular 32oz | LB-BEEF-REG-32 | 32oz | $25.00 | Beef > Regular |
 | Lovin' Bowl Beef Puppy 16oz | LB-BEEF-PUP-16 | 16oz | $15.00 | Beef > Puppy |
 | Lovin' Bowl Beef Puppy 32oz | LB-BEEF-PUP-32 | 32oz | $25.00 | Beef > Puppy |
-| Lovin' Bowl Beef Grain Free 16oz | LB-BEEF-GF-16 | 16oz | $14.00 | Beef > Grain Free |
-| Lovin' Bowl Beef Grain Free 32oz | LB-BEEF-GF-32 | 32oz | $24.00 | Beef > Grain Free |
-| Lovin' Bowl Beef Dehydrated 32oz | LB-BEEF-DH-32 | 32oz | $29.00 | Beef > Dehydrated |
+| Lovin' Bowl Beef Grain Free 16oz | LB-BEEF-GF-16 | 16oz | $15.00 | Beef > Grain Free |
+| Lovin' Bowl Beef Grain Free 32oz | LB-BEEF-GF-32 | 32oz | $25.00 | Beef > Grain Free |
+| Lovin' Bowl Beef Dehydrated 32oz | LB-BEEF-DH-32 | 32oz | $25.00 | Beef > Dehydrated |
 
 ### Chicken (7 products)
 | Product | SKU | Size | Price | Category |
 |---------|-----|------|-------|----------|
-| Lovin' Bowl Chicken Regular 16oz | LB-CHKN-REG-16 | 16oz | $14.00 | Chicken > Regular |
-| Lovin' Bowl Chicken Regular 32oz | LB-CHKN-REG-32 | 32oz | $24.00 | Chicken > Regular |
+| Lovin' Bowl Chicken Regular 16oz | LB-CHKN-REG-16 | 16oz | $15.00 | Chicken > Regular |
+| Lovin' Bowl Chicken Regular 32oz | LB-CHKN-REG-32 | 32oz | $25.00 | Chicken > Regular |
 | Lovin' Bowl Chicken Puppy 16oz | LB-CHKN-PUP-16 | 16oz | $15.00 | Chicken > Puppy |
 | Lovin' Bowl Chicken Puppy 32oz | LB-CHKN-PUP-32 | 32oz | $25.00 | Chicken > Puppy |
-| Lovin' Bowl Chicken Grain Free 16oz | LB-CHKN-GF-16 | 16oz | $14.00 | Chicken > Grain Free |
-| Lovin' Bowl Chicken Grain Free 32oz | LB-CHKN-GF-32 | 32oz | $24.00 | Chicken > Grain Free |
-| Lovin' Bowl Chicken Dehydrated 32oz | LB-CHKN-DH-32 | 32oz | $29.00 | Chicken > Dehydrated |
+| Lovin' Bowl Chicken Grain Free 16oz | LB-CHKN-GF-16 | 16oz | $15.00 | Chicken > Grain Free |
+| Lovin' Bowl Chicken Grain Free 32oz | LB-CHKN-GF-32 | 32oz | $25.00 | Chicken > Grain Free |
+| Lovin' Bowl Chicken Dehydrated 32oz | LB-CHKN-DH-32 | 32oz | $25.00 | Chicken > Dehydrated |
 
 ### Lamb (7 products)
 | Product | SKU | Size | Price | Category |
@@ -169,7 +158,7 @@ Go to **Products → Add New Product** for each:
 | Lovin' Bowl Lamb Puppy 32oz | LB-LAMB-PUP-32 | 32oz | $25.00 | Lamb > Puppy |
 | Lovin' Bowl Lamb Grain Free 16oz | LB-LAMB-GF-16 | 16oz | $15.00 | Lamb > Grain Free |
 | Lovin' Bowl Lamb Grain Free 32oz | LB-LAMB-GF-32 | 32oz | $25.00 | Lamb > Grain Free |
-| Lovin' Bowl Lamb Dehydrated 32oz | LB-LAMB-DH-32 | 32oz | $30.00 | Lamb > Dehydrated |
+| Lovin' Bowl Lamb Dehydrated 32oz | LB-LAMB-DH-32 | 32oz | $25.00 | Lamb > Dehydrated |
 
 ### Salmon (7 products)
 | Product | SKU | Size | Price | Category |
@@ -180,7 +169,7 @@ Go to **Products → Add New Product** for each:
 | Lovin' Bowl Salmon Puppy 32oz | LB-SLMN-PUP-32 | 32oz | $25.00 | Salmon > Puppy |
 | Lovin' Bowl Salmon Grain Free 16oz | LB-SLMN-GF-16 | 16oz | $15.00 | Salmon > Grain Free |
 | Lovin' Bowl Salmon Grain Free 32oz | LB-SLMN-GF-32 | 32oz | $25.00 | Salmon > Grain Free |
-| Lovin' Bowl Salmon Dehydrated 32oz | LB-SLMN-DH-32 | 32oz | $30.00 | Salmon > Dehydrated |
+| Lovin' Bowl Salmon Dehydrated 32oz | LB-SLMN-DH-32 | 32oz | $25.00 | Salmon > Dehydrated |
 
 ### Pork (7 products)
 | Product | SKU | Size | Price | Category |
@@ -191,7 +180,12 @@ Go to **Products → Add New Product** for each:
 | Lovin' Bowl Pork Puppy 32oz | LB-PORK-PUP-32 | 32oz | $25.00 | Pork > Puppy |
 | Lovin' Bowl Pork Grain Free 16oz | LB-PORK-GF-16 | 16oz | $15.00 | Pork > Grain Free |
 | Lovin' Bowl Pork Grain Free 32oz | LB-PORK-GF-32 | 32oz | $25.00 | Pork > Grain Free |
-| Lovin' Bowl Pork Dehydrated 32oz | LB-PORK-DH-32 | 32oz | $30.00 | Pork > Dehydrated |
+| Lovin' Bowl Pork Dehydrated 32oz | LB-PORK-DH-32 | 32oz | $25.00 | Pork > Dehydrated |
+
+### Bone Broth (1 product)
+| Product | SKU | Size | Price | Category |
+|---------|-----|------|-------|----------|
+| Lovin' Bowl Beef Bone Broth 32oz | LB-BEEF-BB-32 | 32oz | $25.00 | Bone Broth |
 
 ### Treats (4 products)
 | Product | SKU | Price | Category |
@@ -208,9 +202,9 @@ Go to **Products → Add New Product** for each:
 In **Settings → Design → Themes → Settings:**
 
 1. Enable "Category Navigation" display
-2. Set max displayed categories to **6** (Regular, Puppy, Grain Free, Dehydrated, Treats, Our Story)
+2. Set max displayed categories to **7** (Regular, Puppy, Grain Free, Dehydrated, Bone Broth, Treats, Our Story)
 3. Enable sub-category dropdowns — each diet shows its 5 protein children
-4. Verify the nav bar renders as: `Regular | Puppy | Grain Free | Dehydrated | Treats | Our Story`
+4. Verify the nav bar renders as: `Regular | Puppy | Grain Free | Dehydrated | Bone Broth | Treats | Our Story`
 
 ---
 

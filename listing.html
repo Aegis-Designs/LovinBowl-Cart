@@ -1,0 +1,103 @@
+<!-- ====================================================================
+     Lovin' Bowl — Shift4Shop Category / Listing Page Template
+     This template is injected at [page_content] in frame.html
+     ==================================================================== -->
+
+<div class="lb-category">
+  <div class="lb-container">
+
+    <!-- Breadcrumb -->
+    <!--START: CATEGORY_FULLLINE-->
+    <nav class="lb-breadcrumb" aria-label="Breadcrumb">
+      [CATEGORY_FULLLINE]
+    </nav>
+    <!--END: CATEGORY_FULLLINE-->
+
+    <!-- Category header -->
+    <div class="lb-category__header">
+      <!--START: category_name-->
+      <h1 class="lb-category__title">[categoryname]</h1>
+      <!--END: category_name-->
+      <!--START: productnumber-->
+      <p class="lb-category__count">[productnumber] products</p>
+      <!--END: productnumber-->
+    </div>
+
+    <!-- Category description -->
+    <!--START: category_description-->
+    <div class="lb-product__description" style="margin-bottom:var(--lb-spacing-lg);">
+      [categorydescription]
+    </div>
+    <!--END: category_description-->
+
+    <!-- Sub-category links -->
+    <!--START: subcategory_links-->
+    <div class="lb-category__filters">
+      [subcategory_links]
+    </div>
+    <!--END: subcategory_links-->
+
+    <!-- Sort options -->
+    <!--START: sorting-->
+    <div class="lb-category__sort">
+      [sortbylist]
+    </div>
+    <!--END: sorting-->
+
+  </div>
+</div>
+
+<!-- Product Grid -->
+<div class="lb-container">
+  <div class="lb-product-grid">
+
+    <!--START: tag_products-->
+    <div class="lb-product-card">
+      <a href="[ITEM_LINK]" class="lb-product-card__image-link">
+        <div class="lb-product-card__image">
+          <!--START: on_sale-->
+          <span class="lb-product-card__badge lb-product-card__badge--sale">Sale</span>
+          <!--END: on_sale-->
+          [THUMBNAIL]
+        </div>
+      </a>
+      <div class="lb-product-card__body">
+        <h3 class="lb-product-card__name">
+          <a href="[ITEM_LINK]">[name]</a>
+        </h3>
+        <!--START: ITEMPRICE-->
+        <div class="lb-product-card__price">
+          <span class="lb-product-card__price-regular">[ITEMPRICE]</span>
+        </div>
+        <!--END: ITEMPRICE-->
+        <!--START: SALEPRICE-->
+        <div class="lb-product-card__price">
+          <span class="lb-product-card__price-sale">[ITEMSALEPRICE]</span>
+          <span class="lb-product-card__price-original">[ITEMPRICE]</span>
+        </div>
+        <!--END: SALEPRICE-->
+        <!--START: review_stars-->
+        <div class="lb-product-card__rating">
+          [review_stars]
+        </div>
+        <!--END: review_stars-->
+      </div>
+    </div>
+    <!--END: tag_products-->
+
+  </div>
+
+  <!-- Pagination -->
+  <!--START: PAGINATION-->
+  <div class="lb-category__pagination" style="text-align:center; padding:var(--lb-spacing-xl) 0;">
+    [PAGINATION]
+  </div>
+  <!--END: PAGINATION-->
+
+  <!-- No products message -->
+  <!--START: no_products-->
+  <div style="text-align:center; padding:var(--lb-spacing-2xl) 0; color:var(--lb-color-text-muted);">
+    <p>No products found in this category.</p>
+  </div>
+  <!--END: no_products-->
+</div>

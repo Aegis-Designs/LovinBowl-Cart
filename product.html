@@ -1,0 +1,165 @@
+<!-- ====================================================================
+     Lovin' Bowl — Shift4Shop Product Detail Page Template
+     This template is injected at [page_content] in frame.html
+     ==================================================================== -->
+
+<div class="lb-product">
+  <div class="lb-container">
+
+    <!-- Breadcrumb -->
+    <!--START: CATEGORY_FULLLINE-->
+    <nav class="lb-breadcrumb" aria-label="Breadcrumb">
+      [CATEGORY_FULLLINE]
+    </nav>
+    <!--END: CATEGORY_FULLLINE-->
+
+    <!-- Two-column layout -->
+    <div class="lb-product__layout">
+
+      <!-- LEFT: Image Gallery -->
+      <div class="lb-product__gallery">
+        <div class="lb-product__gallery-main">
+          <!--START: image1-->
+          <img class="lb-product__gallery-img" id="product-main-img" src="[image1]" alt="[name]" />
+          <!--END: image1-->
+        </div>
+        <div class="lb-product__gallery-thumbs">
+          <!--START: image1-->
+          <button class="lb-product__gallery-thumb is-selected" data-lb-gallery-thumb aria-label="Image 1">
+            <img src="[image1]" alt="[name] - Image 1" />
+          </button>
+          <!--END: image1-->
+          <!--START: image2-->
+          <button class="lb-product__gallery-thumb" data-lb-gallery-thumb aria-label="Image 2">
+            <img src="[image2]" alt="[imagecaption2]" />
+          </button>
+          <!--END: image2-->
+          <!--START: image3-->
+          <button class="lb-product__gallery-thumb" data-lb-gallery-thumb aria-label="Image 3">
+            <img src="[image3]" alt="[imagecaption3]" />
+          </button>
+          <!--END: image3-->
+          <!--START: image4-->
+          <button class="lb-product__gallery-thumb" data-lb-gallery-thumb aria-label="Image 4">
+            <img src="[image4]" alt="[imagecaption4]" />
+          </button>
+          <!--END: image4-->
+        </div>
+      </div>
+
+      <!-- RIGHT: Product Info -->
+      <div class="lb-product__info">
+
+        <!--START: product_name-->
+        <h1 class="lb-product__name">[name]</h1>
+        <!--END: product_name-->
+
+        <!-- Rating -->
+        <!--START: totalrating-->
+        <div class="lb-product__rating">
+          <span class="lb-product__stars">[totalrating]</span>
+          <!--START: review_count-->
+          <span class="lb-product__review-count">([review_count] reviews)</span>
+          <!--END: review_count-->
+        </div>
+        <!--END: totalrating-->
+
+        <!-- Price -->
+        <!--START: pricing-->
+        <div class="lb-product__price">
+          <span class="lb-product__price-current">[price]</span>
+        </div>
+        <!--END: pricing-->
+        <!--START: SALEPRICE-->
+        <div class="lb-product__price">
+          <span class="lb-product__price-sale">[saleprice]</span>
+          <span class="lb-product__price-was">[price]</span>
+        </div>
+        <!--END: SALEPRICE-->
+
+        <!-- Short description -->
+        <!--START: description-->
+        <div class="lb-product__description">
+          [description]
+        </div>
+        <!--END: description-->
+
+        <!-- Product options (size, flavor, etc.) -->
+        <!--START: PRODUCT_OPTIONS-->
+        <div class="lb-product__options">
+          [product_options]
+        </div>
+        <!--END: PRODUCT_OPTIONS-->
+
+        <!-- Recurring orders / Autoship -->
+        <!--START: RECURRINGORDER-->
+        <div class="lb-purchase-options">
+          [recurringorders_addcart-question]
+          [recurringorders_select-frequency]
+        </div>
+        <!--END: RECURRINGORDER-->
+
+        <!-- Quantity + Add to cart -->
+        <!--START: addtocart-->
+        <div class="lb-product__actions">
+          <!--START: quantity-->
+          <div class="lb-quantity">
+            [product_quantity]
+          </div>
+          <!--END: quantity-->
+          <div>
+            [product_addtocart]
+          </div>
+        </div>
+        <!--END: addtocart-->
+
+        <!-- Availability -->
+        <!--START: product_availability-->
+        <div class="lb-product__badge lb-product__badge--guarantee">
+          [availability]
+        </div>
+        <!--END: product_availability-->
+
+        <!-- Free shipping -->
+        <!--START: freeshippingblock-->
+        <div class="lb-product__badge lb-product__badge--shipping">
+          [freeshipping]
+        </div>
+        <!--END: freeshippingblock-->
+
+        <!-- SKU -->
+        <!--START: product_code-->
+        <div style="font-size:var(--lb-font-size-xs); color:var(--lb-color-text-muted); margin-top:var(--lb-spacing-sm);">
+          SKU: [catalogid]
+        </div>
+        <!--END: product_code-->
+
+      </div>
+    </div>
+
+    <!-- Extended description -->
+    <!--START: extended_description-->
+    <div class="lb-product__extended">
+      [extended_description]
+    </div>
+    <!--END: extended_description-->
+
+    <!-- Related products -->
+    <!--START: related_products-->
+    <div class="lb-product__extended">
+      <h2>You May Also Like</h2>
+      <div class="lb-product-grid" style="margin-top:var(--lb-spacing-lg);">
+        [related_products]
+      </div>
+    </div>
+    <!--END: related_products-->
+
+    <!-- Reviews -->
+    <!--START: product_review-->
+    <div class="lb-product__reviews">
+      [product_review]
+    </div>
+    <!--END: product_review-->
+
+  </div>
+</div>

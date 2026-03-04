@@ -1,0 +1,15 @@
+{
+  "name": "lovinbowl-shift4shop-theme",
+  "version": "2.0.0",
+  "description": "Lovin' Bowl — modernized Shift4Shop storefront theme",
+  "private": true,
+  "scripts": {
+    "generate": "node generate-nav.js",
+    "lint": "npx htmlhint frame.html listing.html product.html home.html listing-mockup.html product-mockup.html home-mockup.html",
+    "serve": "node serve.mjs"
+  },
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "puppeteer": "^24.0.0"
+  }
+}

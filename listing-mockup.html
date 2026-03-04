@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Regular — Lovin' Bowl</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+<link rel="stylesheet" href="styles/lovinbowl.css" type="text/css" />
+<style>
+  /* Minimal resets for standalone mockup (Bootstrap not loaded) */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--lb-font-family); color: var(--lb-color-text); background: var(--lb-color-bg); }
+  a { color: inherit; }
+  ul { list-style: none; }
+  img { max-width: 100%; height: auto; display: block; }
+</style>
+</head>
+<body class="lb-site">
+
+<!-- Simulated header -->
+<header class="lb-header">
+  <div class="lb-container lb-header__inner">
+    <div class="lb-header__logo">
+      <h3 class="store-name">Lovin' Bowl</h3>
+      <h4 class="store-slogan">Healthy food for dogs</h4>
+    </div>
+  </div>
+</header>
+
+<!-- Diet-first nav bar -->
+<div class="lb-nav-bar">
+  <nav class="lb-nav" role="navigation" aria-label="Product categories">
+    <ul class="lb-nav__list">
+      <li class="lb-nav__item lb-nav__item--has-dropdown">
+        <a class="lb-nav__link" href="/listing" style="color:#fff; background:rgba(255,255,255,0.12);">Regular</a>
+        <ul class="lb-nav__dropdown">
+          <li><a href="/product">Beef</a></li>
+          <li><a href="#">Chicken</a></li>
+          <li><a href="#">Lamb</a></li>
+          <li><a href="#">Salmon</a></li>
+          <li><a href="#">Pork</a></li>
+        </ul>
+      </li>
+      <li class="lb-nav__item lb-nav__item--has-dropdown">
+        <a class="lb-nav__link" href="#">Puppy</a>
+        <ul class="lb-nav__dropdown">
+          <li><a href="#">Beef</a></li>
+          <li><a href="#">Chicken</a></li>
+          <li><a href="#">Lamb</a></li>
+          <li><a href="#">Salmon</a></li>
+          <li><a href="#">Pork</a></li>
+        </ul>
+      </li>
+      <li class="lb-nav__item lb-nav__item--has-dropdown">
+        <a class="lb-nav__link" href="#">Grain Free</a>
+        <ul class="lb-nav__dropdown">
+          <li><a href="#">Beef</a></li>
+          <li><a href="#">Chicken</a></li>
+          <li><a href="#">Lamb</a></li>
+          <li><a href="#">Salmon</a></li>
+          <li><a href="#">Pork</a></li>
+        </ul>
+      </li>
+      <li class="lb-nav__item lb-nav__item--has-dropdown">
+        <a class="lb-nav__link" href="#">Dehydrated</a>
+        <ul class="lb-nav__dropdown">
+          <li><a href="#">Beef</a></li>
+          <li><a href="#">Chicken</a></li>
+          <li><a href="#">Lamb</a></li>
+          <li><a href="#">Salmon</a></li>
+          <li><a href="#">Pork</a></li>
+        </ul>
+      </li>
+      <li class="lb-nav__item"><a class="lb-nav__link" href="#">Treats</a></li>
+      <li class="lb-nav__item"><a class="lb-nav__link" href="#">Our Story</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- LISTING PAGE CONTENT (what goes inside [page_content]) -->
+<main class="lb-main">
+  <div class="lb-category">
+    <div class="lb-container">
+
+      <!-- Breadcrumb -->
+      <nav class="lb-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> &rsaquo; <strong>Regular</strong>
+      </nav>
+
+      <!-- Category header -->
+      <div class="lb-category__header">
+        <h1 class="lb-category__title">Regular</h1>
+        <p class="lb-category__count">10 products</p>
+      </div>
+
+      <!-- Category description -->
+      <div class="lb-product__description" style="margin-bottom:var(--lb-spacing-lg);">
+        Our regular diet is gently cooked with real, whole ingredients &mdash; fresh proteins, sweet potatoes, brown rice, quinoa, and a blend of superfoods. Formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrition Profiles for maintenance.
+      </div>
+
+      <!-- Protein filter pills -->
+      <div class="lb-category__filters">
+        <a href="#" class="lb-category__filter-pill is-active">All</a>
+        <a href="#" class="lb-category__filter-pill">Beef</a>
+        <a href="#" class="lb-category__filter-pill">Chicken</a>
+        <a href="#" class="lb-category__filter-pill">Lamb</a>
+        <a href="#" class="lb-category__filter-pill">Salmon</a>
+        <a href="#" class="lb-category__filter-pill">Pork</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product grid -->
+  <div class="lb-container">
+    <div class="lb-product-grid">
+
+      <!-- Card 1: Beef Regular 16oz -->
+      <div class="lb-product-card">
+        <a href="/product" class="lb-product-card__image-link">
+          <div class="lb-product-card__image">
+            <img src="https://placehold.co/600x600/faf4ed/b5651d?text=Beef+Regular+16oz" alt="Lovin' Bowl Beef Regular 16oz" />
+          </div>
+        </a>
+        <div class="lb-product-card__body">
+          <h3 class="lb-product-card__name"><a href="/product">Lovin' Bowl Beef Regular</a></h3>
+          <div class="lb-product-card__size">16 oz (1 lb)</div>
+          <div class="lb-product-card__price">
+            <span class="lb-product-card__price-regular">$14.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Beef Regular 32oz -->
+      <div class="lb-product-card">
+        <a href="/product" class="lb-product-card__image-link">
+          <div class="lb-product-card__image">
+            <span class="lb-product-card__badge lb-product-card__badge--sale">Best Value</span>
+            <img src="https://placehold.co/600x600/faf4ed/b5651d?text=Beef+Regular+32oz" alt="Lovin' Bowl Beef Regular 32oz" />
+          </div>
+        </a>
+        <div class="lb-product-card__body">
+          <h3 class="lb-product-card__name"><a href="/product">Lovin' Bowl Beef Regular</a></h3>
+          <div class="lb-product-card__size">32 oz (2 lbs)</div>
+          <div class="lb-product-card__price">
+            <span class="lb-product-card__price-regular">$24.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Chicken Regular 16oz -->
+      <div class="lb-product-card">
+        <a href="#" class="lb-product-card__image-link">
+          <div class="lb-product-card__image">
+            <img src="https://placehold.co/600x600/faf4ed/d4a373?text=Chicken+Regular+16oz" alt="Lovin' Bowl Chicken Regular 16oz" />
+          </div>
+        </a>
+        <div class="lb-product-card__body">
+          <h3 class="lb-product-card__name"><a href="#">Lovin' Bowl Chicken Regular</a></h3>
+          <div class="lb-product-card__size">16 oz (1 lb)</div>
+          <div class="lb-product-card__price">
+            <span class="lb-product-card__price-regular">$14.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Chicken Regular 32oz -->
+      <div class="lb-product-card">
+        <a href="#" class="lb-product-card__image-link">
+          <div class="lb-product-card__image">
+            <img src="https://placehold.co/600x600/faf4ed/d4a373?text=Chicken+Regular+32oz" alt="Lovin' Bowl Chicken Regular 32oz" />
+          </div>
+        </a>
+        <div class="lb-product-card__body">
+          <h3 class="lb-product-card__name"><a href="#">Lovin' Bowl Chicken Regular</a></h3>
+          <div class="lb-product-card__size">32 oz (2 lbs)</div>
+          <div class="lb-product-card__price">
+            <span class="lb-product-card__price-regular">$24.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5: Lamb Regular 16oz -->
+      <div class="lb-product-card">
+        <a href="#" class="lb-product-card__image-link">
+          <div class="lb-product-card__image">
+            <img src="https://placehold.co/600x600/faf4ed/8f4e15?text=Lamb+Regular+16oz" alt="Lovin' Bowl Lamb Regular 16oz" />
+          </div>
+        </a>
+        <div class="lb-product-card__body">
+          <h3 class="lb-product-card__name"><a href="#">Lovin' Bowl Lamb Regular</a></h3>
+          <div class="lb-product-card__size">16 oz (1 lb)</div>
+          <div class="lb-product-card__price">
+            <span class="lb-product-card__price-regular">$15.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6: Lamb Regular 32oz -->
+      <div class="lb-product-card">
+        <a href="#" class="lb-product-card__image-link">
+          <div class="lb-product-card__image">
+            <img src="https://placehold.co/600x600/faf4ed/8f4e15?text=Lamb+Regular+32oz" alt="Lovin' Bowl Lamb Regular 32oz" />
+          </div>
+        </a>
+        <div class="lb-product-card__body">
+          <h3 class="lb-product-card__name"><a href="#">Lovin' Bowl Lamb Regular</a></h3>
+          <div class="lb-product-card__size">32 oz (2 lbs)</div>
+          <div class="lb-product-card__price">
+            <span class="lb-product-card__price-regular">$25.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7: Salmon Regular 16oz -->
+      <div class="lb-product-card">
+        <a href="#" class="lb-product-card__image-link">
+          <div class="lb-product-card__image">
+            <img src="https://placehold.co/600x600/faf4ed/4a7c59?text=Salmon+Regular+16oz" alt="Lovin' Bowl Salmon Regular 16oz" />
+          </div>
+        </a>
+        <div class="lb-product-card__body">
+          <h3 class="lb-product-card__name"><a href="#">Lovin' Bowl Salmon Regular</a></h3>
+          <div class="lb-product-card__size">16 oz (1 lb)</div>
+          <div class="lb-product-card__price">
+            <span class="lb-product-card__price-regular">$15.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 8: Salmon Regular 32oz -->
+      <div class="lb-product-card">
+        <a href="#" class="lb-product-card__image-link">
+          <div class="lb-product-card__image">
+            <img src="https://placehold.co/600x600/faf4ed/4a7c59?text=Salmon+Regular+32oz" alt="Lovin' Bowl Salmon Regular 32oz" />
+          </div>
+        </a>
+        <div class="lb-product-card__body">
+          <h3 class="lb-product-card__name"><a href="#">Lovin' Bowl Salmon Regular</a></h3>
+          <div class="lb-product-card__size">32 oz (2 lbs)</div>
+          <div class="lb-product-card__price">
+            <span class="lb-product-card__price-regular">$25.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 9: Pork Regular 16oz -->
+      <div class="lb-product-card">
+        <a href="#" class="lb-product-card__image-link">
+          <div class="lb-product-card__image">
+            <img src="https://placehold.co/600x600/faf4ed/b5651d?text=Pork+Regular+16oz" alt="Lovin' Bowl Pork Regular 16oz" />
+          </div>
+        </a>
+        <div class="lb-product-card__body">
+          <h3 class="lb-product-card__name"><a href="#">Lovin' Bowl Pork Regular</a></h3>
+          <div class="lb-product-card__size">16 oz (1 lb)</div>
+          <div class="lb-product-card__price">
+            <span class="lb-product-card__price-regular">$15.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 10: Pork Regular 32oz -->
+      <div class="lb-product-card">
+        <a href="#" class="lb-product-card__image-link">
+          <div class="lb-product-card__image">
+            <img src="https://placehold.co/600x600/faf4ed/b5651d?text=Pork+Regular+32oz" alt="Lovin' Bowl Pork Regular 32oz" />
+          </div>
+        </a>
+        <div class="lb-product-card__body">
+          <h3 class="lb-product-card__name"><a href="#">Lovin' Bowl Pork Regular</a></h3>
+          <div class="lb-product-card__size">32 oz (2 lbs)</div>
+          <div class="lb-product-card__price">
+            <span class="lb-product-card__price-regular">$25.00</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- Minimal footer -->
+<footer class="lb-footer">
+  <div class="lb-container">
+    <div class="lb-footer__copyright">
+      <div>&copy; 2026 Lovin' Bowl. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

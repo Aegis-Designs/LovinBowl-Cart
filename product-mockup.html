@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beef — Lovin' Bowl</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+<link rel="stylesheet" href="styles/lovinbowl.css" type="text/css" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--lb-font-family); color: var(--lb-color-text); background: var(--lb-color-bg); }
+  a { color: inherit; }
+  ul { list-style: none; }
+  img { max-width: 100%; height: auto; display: block; }
+  .hidden { display: none !important; }
+</style>
+</head>
+<body class="lb-site">
+
+<!-- Simulated header -->
+<header class="lb-header">
+  <div class="lb-container lb-header__inner">
+    <div class="lb-header__logo">
+      <h3 class="store-name">Lovin' Bowl</h3>
+      <h4 class="store-slogan">Healthy food for dogs</h4>
+    </div>
+  </div>
+</header>
+
+<!-- Diet-first nav bar -->
+<div class="lb-nav-bar">
+  <nav class="lb-nav" role="navigation" aria-label="Product categories">
+    <ul class="lb-nav__list">
+      <li class="lb-nav__item lb-nav__item--has-dropdown">
+        <a class="lb-nav__link" href="/listing">Regular</a>
+        <ul class="lb-nav__dropdown">
+          <li><a href="/product" style="font-weight:600;">Beef</a></li>
+          <li><a href="#">Chicken</a></li>
+          <li><a href="#">Lamb</a></li>
+          <li><a href="#">Salmon</a></li>
+          <li><a href="#">Pork</a></li>
+        </ul>
+      </li>
+      <li class="lb-nav__item lb-nav__item--has-dropdown">
+        <a class="lb-nav__link" href="#">Puppy</a>
+        <ul class="lb-nav__dropdown">
+          <li><a href="#">Beef</a></li>
+          <li><a href="#">Chicken</a></li>
+          <li><a href="#">Lamb</a></li>
+          <li><a href="#">Salmon</a></li>
+          <li><a href="#">Pork</a></li>
+        </ul>
+      </li>
+      <li class="lb-nav__item lb-nav__item--has-dropdown">
+        <a class="lb-nav__link" href="#">Grain Free</a>
+        <ul class="lb-nav__dropdown">
+          <li><a href="#">Beef</a></li>
+          <li><a href="#">Chicken</a></li>
+          <li><a href="#">Lamb</a></li>
+          <li><a href="#">Salmon</a></li>
+          <li><a href="#">Pork</a></li>
+        </ul>
+      </li>
+      <li class="lb-nav__item lb-nav__item--has-dropdown">
+        <a class="lb-nav__link" href="#">Dehydrated</a>
+        <ul class="lb-nav__dropdown">
+          <li><a href="#">Beef</a></li>
+          <li><a href="#">Chicken</a></li>
+          <li><a href="#">Lamb</a></li>
+          <li><a href="#">Salmon</a></li>
+          <li><a href="#">Pork</a></li>
+        </ul>
+      </li>
+      <li class="lb-nav__item"><a class="lb-nav__link" href="#">Treats</a></li>
+      <li class="lb-nav__item"><a class="lb-nav__link" href="#">Our Story</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- PRODUCT DETAIL PAGE CONTENT -->
+<main class="lb-main">
+  <div class="lb-product">
+    <div class="lb-container">
+
+      <!-- Breadcrumb -->
+      <nav class="lb-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> &rsaquo; <a href="/listing">Regular</a> &rsaquo; <strong>Beef</strong>
+      </nav>
+
+      <!-- Two-column layout -->
+      <div class="lb-product__layout">
+
+        <!-- LEFT: Image Gallery -->
+        <div class="lb-product__gallery">
+          <div class="lb-product__gallery-main">
+            <img id="product-main-img" class="lb-product__gallery-img" src="https://placehold.co/800x800/faf4ed/b5651d?text=Beef" alt="Lovin' Bowl Beef" />
+          </div>
+          <div class="lb-product__gallery-thumbs">
+            <button class="lb-product__gallery-thumb is-selected" data-lb-gallery-thumb aria-label="Product front view">
+              <img src="https://placehold.co/150x150/faf4ed/b5651d?text=Front" alt="Front of bag" />
+            </button>
+            <button class="lb-product__gallery-thumb" data-lb-gallery-thumb aria-label="Ingredients view">
+              <img src="https://placehold.co/150x150/faf4ed/8f4e15?text=Ingredients" alt="Ingredients" />
+            </button>
+            <button class="lb-product__gallery-thumb" data-lb-gallery-thumb aria-label="Serving suggestion">
+              <img src="https://placehold.co/150x150/faf4ed/4a7c59?text=Serving" alt="Serving suggestion" />
+            </button>
+            <button class="lb-product__gallery-thumb" data-lb-gallery-thumb aria-label="Lifestyle shot">
+              <img src="https://placehold.co/150x150/faf4ed/d4a373?text=Lifestyle" alt="Lifestyle" />
+            </button>
+          </div>
+        </div>
+
+        <!-- RIGHT: Product Info -->
+        <div class="lb-product__info">
+
+          <h1 class="lb-product__name">Beef</h1>
+
+          <div class="lb-product__subtitle">Healthy Food For Dogs</div>
+
+          <!-- Price -->
+          <div class="lb-product__price">
+            <span class="lb-product__price-current">$24.00</span>
+          </div>
+
+          <!-- Short description (actual ingredients from current store) -->
+          <div class="lb-product__description">
+            Ground Beef, Sweet Potatoes, Beef Liver, Beef Heart, Brown Rice, Quinoa, Carrots, Apples, Kale, Flax Seed Powder, Butter, Wheat Germ, Calcium Citrate, Brewers Yeast, Turmeric, Ginger, Spirulina, Apple Cider Vinegar, Olive Oil, Water. Our Beef Diet is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrition Profiles for maintenance.
+          </div>
+
+          <!-- Diet Option selector (matching current store layout) -->
+          <div class="lb-product__options">
+            <div class="lb-product__option-group">
+              <span class="lb-product__option-label">Diet Option</span>
+              <div class="lb-size-selector">
+                <button class="lb-size-selector__btn is-selected" data-lb-size-value="regular">Regular</button>
+                <button class="lb-size-selector__btn" data-lb-size-value="dehydrated">Dehydrated (+$5.00)</button>
+                <button class="lb-size-selector__btn" data-lb-size-value="puppy">Puppy Variety</button>
+                <button class="lb-size-selector__btn" data-lb-size-value="grain-free">Grain-Free</button>
+              </div>
+            </div>
+
+            <!-- Size selector -->
+            <div class="lb-product__option-group">
+              <span class="lb-product__option-label">Size</span>
+              <div class="lb-size-selector">
+                <button class="lb-size-selector__btn" data-lb-size-value="16oz">16oz</button>
+                <button class="lb-size-selector__btn is-selected" data-lb-size-value="32oz">32oz</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quantity + Add to cart -->
+          <div class="lb-product__actions">
+            <div class="lb-quantity">
+              <button type="button" class="lb-quantity__btn" data-lb-qty-action="decrement" aria-label="Decrease quantity">&minus;</button>
+              <input type="number" class="lb-quantity__input" value="1" min="1" max="99" aria-label="Quantity" />
+              <button type="button" class="lb-quantity__btn" data-lb-qty-action="increment" aria-label="Increase quantity">&plus;</button>
+            </div>
+            <button type="button" class="lb-btn-cart">
+              Add to Cart
+            </button>
+          </div>
+
+          <!-- Guarantee badge -->
+          <div class="lb-product__badge lb-product__badge--guarantee">
+            Made in the USA, backed by our 30 Day money back guarantee.
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Extended description -->
+      <div id="extended" class="lb-product__extended">
+        <h2>Description</h2>
+        <p>Ground Beef, Sweet Potatoes, Beef Liver, Beef Heart, Brown Rice, Quinoa, Carrots, Apples, Kale, Flax Seed Powder, Butter, Wheat Germ, Calcium Citrate, Brewers Yeast, Turmeric, Ginger, Spirulina, Apple Cider Vinegar, Olive Oil, Water.</p>
+        <p style="margin-top:1rem;">Our Beef Diet is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrition Profiles for maintenance.</p>
+      </div>
+
+      <!-- Frequently Purchased Together -->
+      <div class="lb-product__extended">
+        <h2>Frequently Purchased Together</h2>
+        <div class="lb-product-grid" style="margin-top:var(--lb-spacing-lg);">
+
+          <div class="lb-product-card">
+            <a href="#" class="lb-product-card__image-link">
+              <div class="lb-product-card__image">
+                <img src="https://placehold.co/600x600/1a2744/e8c547?text=Chicken+Liver%0ACookies" alt="Handmade Cookies - Chicken" />
+              </div>
+            </a>
+            <div class="lb-product-card__body">
+              <h3 class="lb-product-card__name"><a href="#">Handmade Cookies - Chicken</a></h3>
+              <div class="lb-product-card__price">
+                <span class="lb-product-card__price-regular">$8.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lb-product-card">
+            <a href="#" class="lb-product-card__image-link">
+              <div class="lb-product-card__image">
+                <img src="https://placehold.co/600x600/1a2744/e85347?text=Beef+Liver%0ACookies" alt="Handmade Cookies - Beef" />
+              </div>
+            </a>
+            <div class="lb-product-card__body">
+              <h3 class="lb-product-card__name"><a href="#">Handmade Cookies - Beef</a></h3>
+              <div class="lb-product-card__price">
+                <span class="lb-product-card__price-regular">$8.00</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- Minimal footer -->
+<footer class="lb-footer">
+  <div class="lb-container">
+    <div class="lb-footer__copyright">
+      <div>&copy; 2026 Lovin' Bowl. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts/lovinbowl.js"></script>
+</body>
+</html>

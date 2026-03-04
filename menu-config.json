@@ -1,0 +1,51 @@
+{
+  "brand": "Lovin' Bowl",
+  "items": [
+    {
+      "label": "Regular",
+      "href": "/regular",
+      "children": [
+        { "label": "Beef", "href": "/beef-regular" },
+        { "label": "Chicken", "href": "/chicken-regular" },
+        { "label": "Lamb", "href": "/lamb-regular" },
+        { "label": "Salmon", "href": "/salmon-regular" },
+        { "label": "Pork", "href": "/pork-regular" }
+      ]
+    },
+    {
+      "label": "Puppy",
+      "href": "/puppy",
+      "children": [
+        { "label": "Beef", "href": "/beef-puppy" },
+        { "label": "Chicken", "href": "/chicken-puppy" },
+        { "label": "Lamb", "href": "/lamb-puppy" },
+        { "label": "Salmon", "href": "/salmon-puppy" },
+        { "label": "Pork", "href": "/pork-puppy" }
+      ]
+    },
+    {
+      "label": "Grain Free",
+      "href": "/grain-free",
+      "children": [
+        { "label": "Beef", "href": "/beef-grain-free" },
+        { "label": "Chicken", "href": "/chicken-grain-free" },
+        { "label": "Lamb", "href": "/lamb-grain-free" },
+        { "label": "Salmon", "href": "/salmon-grain-free" },
+        { "label": "Pork", "href": "/pork-grain-free" }
+      ]
+    },
+    {
+      "label": "Dehydrated",
+      "href": "/dehydrated",
+      "children": [
+        { "label": "Beef", "href": "/beef-dehydrated" },
+        { "label": "Chicken", "href": "/chicken-dehydrated" },
+        { "label": "Lamb", "href": "/lamb-dehydrated" },
+        { "label": "Salmon", "href": "/salmon-dehydrated" },
+        { "label": "Pork", "href": "/pork-dehydrated" }
+      ]
+    },
+    { "label": "Treats", "href": "/treats" },
+    { "label": "Our Story", "href": "/our-story" }
+  ]
+}

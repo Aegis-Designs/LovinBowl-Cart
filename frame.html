@@ -1,0 +1,391 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>[TITLE]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+[META]
+
+<!--START: FRAME_RSSFEEDS -->
+<link rel="alternate" type="application/rss+xml" title="Featured Items (RSS 2.0)" href="[store_url]/rss.asp?type=home" />
+<link rel="alternate" type="application/rss+xml" title="Products On Sale (RSS 2.0)" href="[store_url]/rss.asp?type=onsale" />
+<link rel="alternate" type="application/rss+xml" title="New Releases (RSS 2.0)" href="[store_url]/rss.asp?type=newreleases" />
+<link rel="alternate" type="application/rss+xml" title="Best Sellers (RSS 2.0)" href="[store_url]/rss.asp?type=bestsellers" />
+<link rel="alternate" type="application/rss+xml" title="Latest Blog Posts (RSS 2.0)" href="[store_url]/rss.asp?type=blog" />
+<!--END: FRAME_RSSFEEDS -->
+
+<!--START: page_styles-->
+<link rel="stylesheet" href="assets/templates/common-core/lib/bootstrap/css/bootstrap.css" type="text/css" />
+<link rel="StyleSheet" href="assets/templates/common-core/css/core.css" type="text/css" />
+[page_styles]
+<link rel="StyleSheet" href="assets/templates/[template]/css/[stylesheet]" type="text/css" />
+<!--END: page_styles-->
+
+<!-- Lovin' Bowl modern theme CSS -->
+<link rel="StyleSheet" href="styles/lovinbowl.css" type="text/css" />
+</head>
+
+<body class="[body_class] lb-site" data-currency="[currency_symbol]" data-decimal="[decimal_places]">
+
+<!-- Skip to content (accessibility) -->
+<a href="#lb-main-content" class="lb-skip-link">Skip to main content</a>
+
+<!-- ======================================================================
+     SITE HEADER
+     ====================================================================== -->
+<header class="lb-header site-header">
+  <div class="lb-container lb-header__inner">
+
+    <!-- Mobile: hamburger (left) -->
+    <div class="lb-header__mobile-start">
+      <button type="button"
+              class="lb-header__mobile-btn"
+              id="mobile-menu-trigger"
+              data-lb-mobile-toggle
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              aria-label="Open menu">
+        <span class="lb-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></span>
+      </button>
+    </div>
+
+    <!-- Desktop: menu links (left) -->
+    <div class="lb-header__menu">
+      <!--START: FRAME_MENU-->
+      <nav id="menulinks-outer" class="menulinks" role="navigation" aria-label="Menu links">
+        <ul id="menulinks">
+          <!--START: menuitems_view-->
+          <!--START: TOP_LINK_FORMAT-->
+          <li><a href="infopage.asp?page=[link_id]" class="menu" target="[link_target]">[link_name]</a></li>
+          <!--END: TOP_LINK_FORMAT-->
+          <!--END: menuitems_view-->
+        </ul>
+      </nav>
+      <!--END: FRAME_MENU-->
+    </div>
+
+    <!-- Center: Logo -->
+    <div class="lb-header__logo">
+      <!--START: global_header-->
+      <h3 class="store-name">[storename]</h3>
+      <h4 class="store-slogan">[storeslogan]</h4>
+      <!--END: global_header-->
+    </div>
+
+    <!-- Desktop: account actions (right) -->
+    <div class="lb-header__actions">
+      <ul class="lb-header__actions-list">
+        <!--START: username-->
+        <li><a href="/myaccount.asp" aria-label="My Account">My Account<span class="lb-icon lb-icon--sm" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></span></a></li>
+        <!--END: username-->
+        <!--START: login-->
+        <li><a href="/myaccount.asp" aria-label="Log in to My Account">My Account<span class="lb-icon lb-icon--sm" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg></span></a></li>
+        <!--END: login-->
+        <li><a href="#" data-lb-search-open aria-label="Search store"><span class="lb-sr-only">Search</span><span class="lb-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span></a></li>
+        <li><a href="/view_cart.asp" aria-label="View shopping cart">Cart<span class="lb-icon lb-icon--sm" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></span></a></li>
+        <li class="lb-tablet-only"><button type="button" id="mobile-menu-trigger2" class="lb-header__mobile-btn lb-header__tablet-trigger" data-lb-mobile-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span class="lb-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></span></button></li>
+        <!--START: FRAME_SEARCH-->
+        <!--END: FRAME_SEARCH-->
+      </ul>
+    </div>
+
+    <!-- Mobile: search + cart (right) -->
+    <div class="lb-header__mobile-end">
+      <a href="/view_cart.asp" class="lb-header__mobile-btn" aria-label="View shopping cart">
+        <span class="lb-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></span>
+      </a>
+      <a href="#" class="lb-header__mobile-btn" data-lb-search-open aria-label="Search store">
+        <span class="lb-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
+      </a>
+    </div>
+
+    <!-- Floating mini-cart -->
+    <!--START: shopping_cart-->
+    <div id="floating-cart" class="floating-cart lb-floating-cart">
+      <a href="view_cart.asp" aria-label="Shopping cart">
+        <span class="lb-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></span>
+        <span class="cart-details">
+          <span class="minicart-items">[ITEMSINCART]</span> Items
+        </span>
+      </a>
+    </div>
+    <!--END: shopping_cart-->
+
+  </div>
+</header>
+
+<!-- ======================================================================
+     CATEGORY NAVIGATION BAR (sticky)
+     ====================================================================== -->
+<div class="lb-nav-bar">
+  <nav class="lb-nav" role="navigation" aria-label="Product categories">
+    <!--START: FRAME_CATEGORY-->
+    <ul id="categories" class="lb-nav__list nav navbar-nav">
+      <!--START: CATEGORIES-->
+      <li class="lb-nav__item [dropdown_class]">
+        <!--START: CATEGORY_FORMAT-->
+        <a href="view_category.asp?cat=CATID" class="lb-nav__link" [dropdown_attributes]>CATEGORY</a>
+        <!--END: CATEGORY_FORMAT-->
+        <!--START: SUB_CATEGORIES-->
+        <ul class="lb-nav__dropdown dropdown-menu">
+          <!--START: SUB_CATEGORY_FORMAT-->
+          <li><a href="view_category.asp?cat=CATID" class="subcat">CATEGORY</a></li>
+          <!--END: SUB_CATEGORY_FORMAT-->
+        </ul>
+        <!--END: SUB_CATEGORIEST-->
+      </li>
+      <!--END: CATEGORIES-->
+    </ul>
+    <!--END: FRAME_CATEGORY-->
+  </nav>
+</div>
+
+<!-- ======================================================================
+     MAIN CONTENT
+     ====================================================================== -->
+<main id="lb-main-content" class="lb-main">
+<!--Get current page template-->
+[page_content]
+<!--/Get current page template-->
+</main>
+
+<!-- ======================================================================
+     FOOTER
+     ====================================================================== -->
+<footer class="lb-footer site-footer">
+  <div class="lb-container">
+    <div class="lb-footer__grid">
+
+      <!-- Column 1: Footer page links -->
+      <div class="lb-footer__links">
+        <button type="button"
+                class="lb-footer__links-toggle"
+                data-lb-footer-links-toggle
+                aria-expanded="false"
+                aria-controls="extrapages">
+          Pages
+        </button>
+        <!--START: FRAME_LINKS-->
+        <ul id="extrapages" class="lb-footer__links-list extrapages">
+          <!--START: LINKS-->
+          <!--START: LINK_FORMAT-->
+          <li><a href="infopage.asp?page=[link_id]&extra=1" target="[link_target]" class="menu-bottom">[link_name]</a></li>
+          <!--END: LINK_FORMAT-->
+          <!--END: LINKS-->
+        </ul>
+        <!--END: FRAME_LINKS-->
+      </div>
+
+      <!-- Column 2: Mailing list -->
+      <div class="lb-footer__mailing">
+        <!--START: FRAME_MAILLIST-->
+        <div class="mailist-box ajax-mailinglist" data-callfront="mailinglist_callfront" data-callback="mailinglist_response">
+          <form method="post" name="mailing" action="mailing_list_ajax.asp">
+            <h3>[frame_mailinglist]</h3>
+            <div class="lb-footer__mailing-form mailinglist-form">
+              <input class="mailinglist-input form-control" type="text" name="email" placeholder="Email Address" autocomplete="off" />
+              <button class="mailinglist-submit btn btn-default" type="submit" name="www">
+                <span id="mailing-btn-txt">[mailinglist_button]</span>
+                <span id="mailing-btn-load" class="lb-spinner lb-hidden" aria-hidden="true"></span>
+              </button>
+            </div>
+            <div class="lb-footer__mailing-options maillist-options">
+              <div class="subscribe"><input id="list_subscribe" type="radio" name="subscribe" value="1" checked="checked"> <label for="list_subscribe">Subscribe</label></div>
+              <div class="subscribe"><input id="list_unsubscribe" type="radio" name="subscribe" value="0"> <label for="list_unsubscribe">Unsubscribe</label></div>
+            </div>
+          </form>
+          <div id="mailinglist-response" class="lb-footer__mailing-response mailinglist-response">
+            <div class="mailinglist-error hidden"><span class="lb-icon lb-icon--sm" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span> <strong>Ooop!</strong> The email you entered isn't valid.</div>
+            <div class="mailinglist-subscribed hidden"><span class="lb-icon lb-icon--sm" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span> <strong>WooHoo!</strong> You subscribed successfully.</div>
+            <div class="mailinglist-unsubscribed hidden"><span class="lb-icon lb-icon--sm" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span> <strong>Ok!</strong> You're unsubscribed.</div>
+          </div>
+        </div>
+        <!--END: FRAME_MAILLIST-->
+      </div>
+
+      <!-- Column 3: Social icons -->
+      <div class="lb-footer__social">
+        <!--START: social_icons-->
+        <ul class="social-icons">
+          <!--START: social_link_facebook-->
+          <li><a href="[social_link_facebook_url]" class="facebook" target="_blank" title="Like Us on Facebook" aria-label="Facebook"><span class="lb-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></span></a></li>
+          <!--END: social_link_facebook-->
+          <!--START: social_link_twitter-->
+          <li><a href="[social_link_twitter_url]" class="twitter" target="_blank" title="Follow Us on Twitter" aria-label="Twitter"><span class="lb-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></span></a></li>
+          <!--END: social_link_twitter-->
+          <!--START: social_link_googleplus-->
+          <li><a href="[social_link_googleplus_url]" class="gplus" target="_blank" title="Follow Us on Google+" aria-label="Google Plus"><span class="lb-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 11v2.4h3.97c-.16 1.03-1.2 3.02-3.97 3.02-2.39 0-4.34-1.98-4.34-4.42s1.95-4.42 4.34-4.42c1.36 0 2.27.58 2.79 1.08l1.9-1.83C15.47 5.69 13.89 5 12 5c-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.72-2.84 6.72-6.84 0-.46-.05-.81-.11-1.16H12zM21 11v2h-2v-2h-2V9h2V7h2v2h2v2h-2z"/></svg></span></a></li>
+          <!--END: social_link_googleplus-->
+          <!--START: social_link_youTube-->
+          <li><a href="[social_link_youTube_url]" class="youtube" target="_blank" title="Subscribe to our Channel" aria-label="YouTube"><span class="lb-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></span></a></li>
+          <!--END: social_link_youTube-->
+          <!--START: social_link_pinterest-->
+          <li><a href="[social_link_pinterest_url]" class="pinterest" target="_blank" title="Follow Us on Pinterest" aria-label="Pinterest"><span class="lb-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg></span></a></li>
+          <!--END: social_link_pinterest-->
+          <!--START: social_link_instagram-->
+          <li><a href="[social_link_instagram_url]" class="instagram" target="_blank" title="Follow Us on Instagram" aria-label="Instagram"><span class="lb-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span></a></li>
+          <!--END: social_link_instagram-->
+          <!--START: social_link_tumblr-->
+          <li><a href="[social_link_tumblr_url]" class="tumblr" target="_blank" title="Follow Us on Tumblr" aria-label="Tumblr"><span class="lb-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.166z"/></svg></span></a></li>
+          <!--END: social_link_tumblr-->
+          <!--START: social_link_blog-->
+          <li><a href="[social_link_blog_url]" class="blog" target="_blank" title="Subscribe to our Blog" aria-label="Blog RSS"><span class="lb-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg></span></a></li>
+          <!--END: social_link_blog-->
+        </ul>
+        <!--END: social_icons-->
+      </div>
+
+    </div><!-- /.lb-footer__grid -->
+  </div>
+
+  <!-- Copyright bar -->
+  <div class="lb-container">
+    <div class="lb-footer__copyright">
+      <div class="copyright_txt">
+        <div>[frame_copyright1]</div>
+      </div>
+      <!--START: global_footer-->
+      <div class="global-footer">[GLOBAL_FOOTER]</div>
+      <!--END: global_footer-->
+    </div>
+  </div>
+</footer>
+
+<!-- ======================================================================
+     SCROLL TO TOP
+     ====================================================================== -->
+<a href="#" class="lb-scroll-top scrollToTop" aria-label="Scroll to top">
+  <span class="lb-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg></span>
+  <span>TOP</span>
+</a>
+
+<!-- ======================================================================
+     MOBILE MENU (off-canvas sidebar)
+     ====================================================================== -->
+<div id="lb-mobile-overlay" class="lb-mobile-overlay" aria-hidden="true"></div>
+<nav id="mobile-menu" class="lb-mobile-menu mobile-menu" role="navigation" aria-label="Mobile menu" aria-hidden="true">
+  <div class="lb-mobile-menu__header">
+    <span style="font-weight:700; font-size:var(--lb-font-size-sm);">Menu</span>
+    <button type="button" class="lb-mobile-menu__close" aria-label="Close menu">
+      <span class="lb-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+    </button>
+  </div>
+  <div class="lb-mobile-menu__section mobile-menu-widget">
+    <h3>Menu Links</h3>
+    <div id="mobile-menulinks"></div>
+  </div>
+  <div class="lb-mobile-menu__section mobile-menu-widget">
+    <h3>Categories</h3>
+    <div id="mobile-categories"></div>
+  </div>
+</nav>
+
+<!-- ======================================================================
+     QUICKVIEW MODAL (Shift4Shop system)
+     ====================================================================== -->
+<!--START: quickview_modal-->
+[quickview_modal]
+<!--END: quickview_modal-->
+
+<!-- ======================================================================
+     SEARCH DIALOG (native <dialog>)
+     ====================================================================== -->
+<dialog id="lb-search-dialog" class="lb-search-dialog" aria-labelledby="lb-search-title">
+  <div class="lb-search-dialog__header">
+    <h4 class="lb-search-dialog__title" id="lb-search-title">Store Search</h4>
+    <button type="button" class="lb-search-dialog__close" aria-label="Close search">
+      <span class="lb-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+    </button>
+  </div>
+  <div class="lb-search-dialog__body">
+    <div id="searchBox" class="searchBox">
+      <form method="get" name="searchForm" action="search.asp">
+        <div class="lb-search-dialog__form search-form">
+          <input type="text" id="searchlight" name="keyword" value="" placeholder="[frame_search]" class="search-text form-control" />
+          <button type="submit" class="search-submit btn btn-default btn-inverse" aria-label="Submit search">
+            <span class="lb-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<!-- ======================================================================
+     FONTS & LEGACY STYLESHEETS
+     Keep these for Shift4Shop core page compatibility
+     ====================================================================== -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<link rel="StyleSheet" href="assets/templates/common-core/lib/fontello/css/fontello.css" type="text/css" />
+<link rel="StyleSheet" href="assets/templates/common-core/lib/fontello/css/animation.css" type="text/css" />
+<link rel="stylesheet" href="/assets/templates/common-core/lib/animate-me/animate.css" type="text/css" media="screen" />
+
+<!-- ======================================================================
+     SCRIPTS
+     jQuery + Bootstrap + core.js kept for Shift4Shop system page compat
+     ====================================================================== -->
+<!--START: page_scripts-->
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://code.jquery.com/jquery-migrate-3.0.1.min.js'></script>
+<script src="assets/templates/common-core/lib/bootstrap/js/bootstrap.js"></script>
+<script src="assets/templates/common-core/js/core.js"></script>
+<script src="assets/templates/[template]/js/main.js"></script>
+[page_scripts]
+<!-- Lovin' Bowl vanilla JS (mobile menu, search dialog, scroll-to-top, reveal-on-scroll) -->
+<script src="assets/templates/[template]/js/lovinbowl.js"></script>
+<script src="scripts/lovinbowl.js"></script>
+<!--END: page_scripts-->
+
+<!-- ======================================================================
+     QUICKSEARCH
+     ====================================================================== -->
+<!--START: quicksearch-->
+<link rel="stylesheet" href="assets/templates/common-html5/quicksearch/quicksearch.css" type="text/css" media="screen" />
+<script type="text/javascript" src="assets/templates/common-html5/quicksearch/jquery.quicksearch.js"></script>
+<script type="text/javascript">
+jQuery(function () {
+  jQuery('#searchlight').searchlight('/search_quick.asp');
+});
+</script>
+<!--END: quicksearch-->
+
+<!-- ======================================================================
+     3DCART / SHIFT4SHOP STATS — DO NOT MODIFY
+     ====================================================================== -->
+<!--START: 3dcart stats-->
+<div class="stats hidden">
+<script type="text/javascript">
+//<![CDATA[
+var file='/stats/count.asp';
+var stats_d=new Date();
+var stats_s=stats_d.getSeconds();
+var stats_m=stats_d.getMinutes();
+var stats_x=stats_s*stats_m;
+var prdID = '[catalogid]';
+var catID = '[catid]';
+stats_f='' + escape(document.referrer);
+stats_f=stats_f.replace('_','----');
+if (navigator.appName=='Netscape'){stats_b='NS';}
+if (navigator.appName=='Microsoft Internet Explorer'){stats_b='MSIE';}
+if (navigator.appVersion.indexOf('MSIE 3')>0) {stats_b='MSIE';}
+stats_u='' + escape(document.URL);
+stats_u=stats_u.replace('_','----');
+stats_w=screen.width;
+stats_h=screen.height;
+stats_v=navigator.appName;
+stats_fs = window.screen.fontSmoothingEnabled;
+if (stats_v != 'Netscape') {stats_c=screen.colorDepth;} else {stats_c=screen.pixelDepth;}
+stats_j=navigator.javaEnabled();
+info='w=' + stats_w + '&h=' + stats_h + '&c=' + stats_c + '&r=' + stats_f + '&u='+ stats_u + '&fs=' + stats_fs + '&b=' + stats_b + '&x=' + stats_x + '&cat=' + catID + '&prd=' + prdID;
+document.write('<img src="' + file + '?'+info+ '" width="1" height="1" border="0" alt="stats" />');
+//]]>
+</script>
+<noscript>
+<img src="/stats/count.asp" width="90" height="30" alt="" />
+</noscript>
+</div>
+<!--END: 3dcart stats-->
+
+</body>
+</html>

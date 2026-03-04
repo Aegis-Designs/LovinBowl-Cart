@@ -1,0 +1,233 @@
+{
+  "brand": "Lovin' Bowl",
+  "tagline": "Healthy Food For Dogs",
+  "skuPrefix": "LB",
+  "skuConvention": "LB-{PROTEIN}-{DIET}-{SIZE}",
+  "proteins": {
+    "BEEF": "Beef",
+    "CHKN": "Chicken",
+    "LAMB": "Lamb",
+    "SLMN": "Salmon",
+    "PORK": "Pork"
+  },
+  "dietTypes": {
+    "REG": { "name": "Regular", "sizes": ["16", "32"], "priceAddon": 0 },
+    "PUP": { "name": "Puppy", "sizes": ["16", "32"], "priceAddon": 0 },
+    "GF":  { "name": "Grain Free", "sizes": ["16", "32"], "priceAddon": 0 },
+    "DH":  { "name": "Dehydrated", "sizes": ["32"], "priceAddon": 5.00 }
+  },
+  "basePricing": {
+    "note": "32oz (2 lb) base prices from current store; 16oz estimated at ~60%",
+    "BEEF": { "32": 24.00, "16": 14.00 },
+    "CHKN": { "32": 24.00, "16": 14.00 },
+    "LAMB": { "32": 25.00, "16": 15.00 },
+    "SLMN": { "32": 25.00, "16": 15.00 },
+    "PORK": { "32": 25.00, "16": 15.00 }
+  },
+  "ingredients": {
+    "BEEF": "Ground Beef, Sweet Potatoes, Beef Liver, Beef Heart, Brown Rice, Quinoa, Carrots, Apples, Kale, Flax Seed Powder, Butter, Wheat Germ, Calcium Citrate, Brewers Yeast, Turmeric, Ginger, Spirulina, Apple Cider Vinegar, Olive Oil, Water.",
+    "CHKN": "Chicken Thighs, Chicken Breast, Sweet Potatoes, Chicken Liver, Brown Rice, Quinoa, Carrots, Apples, Kale, Flax Seed Powder, Butter, Wheat Germ, Calcium Citrate, Brewers Yeast, Turmeric, Ginger, Spirulina, Apple Cider Vinegar, Olive Oil, Water.",
+    "LAMB": "Ground Lamb, Sweet Potatoes, Beef Heart, Beef Liver, Brown Rice, Pumpkin, Quinoa, Carrots, Kale, Flax Seed Powder, Butter, Wheat Germ, Calcium Citrate, Brewers Yeast, Turmeric, Ginger, Spirulina, Apple Cider Vinegar, Olive Oil, Water.",
+    "SLMN": "Salmon, Sweet Potatoes, Beef Heart, Beef Liver, Brown Rice, Quinoa, Carrots, Apples, Kale, Flax Seed Powder, Butter, Wheat Germ, Calcium Citrate, Brewers Yeast, Turmeric, Ginger, Spirulina, Apple Cider Vinegar, Olive Oil, Water.",
+    "PORK": "Ground Pork, Sweet Potatoes, Beef Heart, Beef Liver, Brown Rice, Quinoa, Carrots, Apples, Kale, Flax Seed Powder, Butter, Wheat Germ, Calcium Citrate, Brewers Yeast, Turmeric, Ginger, Spirulina, Apple Cider Vinegar, Olive Oil, Water."
+  },
+  "aafcoStatement": "Our {protein} Diet is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrition Profiles for maintenance.",
+  "categories": [
+    {
+      "name": "Beef",
+      "slug": "beef",
+      "subcategories": [
+        {
+          "name": "Regular",
+          "slug": "beef-regular",
+          "products": [
+            { "name": "Lovin' Bowl Beef Regular 16oz", "sku": "LB-BEEF-REG-16", "size": "16oz", "weight": 1.0, "price": 14.00 },
+            { "name": "Lovin' Bowl Beef Regular 32oz", "sku": "LB-BEEF-REG-32", "size": "32oz", "weight": 2.0, "price": 24.00 }
+          ]
+        },
+        {
+          "name": "Puppy",
+          "slug": "beef-puppy",
+          "products": [
+            { "name": "Lovin' Bowl Beef Puppy 16oz", "sku": "LB-BEEF-PUP-16", "size": "16oz", "weight": 1.0, "price": 15.00 },
+            { "name": "Lovin' Bowl Beef Puppy 32oz", "sku": "LB-BEEF-PUP-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
+          ]
+        },
+        {
+          "name": "Grain Free",
+          "slug": "beef-grain-free",
+          "products": [
+            { "name": "Lovin' Bowl Beef Grain Free 16oz", "sku": "LB-BEEF-GF-16", "size": "16oz", "weight": 1.0, "price": 14.00 },
+            { "name": "Lovin' Bowl Beef Grain Free 32oz", "sku": "LB-BEEF-GF-32", "size": "32oz", "weight": 2.0, "price": 24.00 }
+          ]
+        },
+        {
+          "name": "Dehydrated",
+          "slug": "beef-dehydrated",
+          "products": [
+            { "name": "Lovin' Bowl Beef Dehydrated 32oz", "sku": "LB-BEEF-DH-32", "size": "32oz", "weight": 2.0, "price": 29.00 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chicken",
+      "slug": "chicken",
+      "subcategories": [
+        {
+          "name": "Regular",
+          "slug": "chicken-regular",
+          "products": [
+            { "name": "Lovin' Bowl Chicken Regular 16oz", "sku": "LB-CHKN-REG-16", "size": "16oz", "weight": 1.0, "price": 14.00 },
+            { "name": "Lovin' Bowl Chicken Regular 32oz", "sku": "LB-CHKN-REG-32", "size": "32oz", "weight": 2.0, "price": 24.00 }
+          ]
+        },
+        {
+          "name": "Puppy",
+          "slug": "chicken-puppy",
+          "products": [
+            { "name": "Lovin' Bowl Chicken Puppy 16oz", "sku": "LB-CHKN-PUP-16", "size": "16oz", "weight": 1.0, "price": 15.00 },
+            { "name": "Lovin' Bowl Chicken Puppy 32oz", "sku": "LB-CHKN-PUP-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
+          ]
+        },
+        {
+          "name": "Grain Free",
+          "slug": "chicken-grain-free",
+          "products": [
+            { "name": "Lovin' Bowl Chicken Grain Free 16oz", "sku": "LB-CHKN-GF-16", "size": "16oz", "weight": 1.0, "price": 14.00 },
+            { "name": "Lovin' Bowl Chicken Grain Free 32oz", "sku": "LB-CHKN-GF-32", "size": "32oz", "weight": 2.0, "price": 24.00 }
+          ]
+        },
+        {
+          "name": "Dehydrated",
+          "slug": "chicken-dehydrated",
+          "products": [
+            { "name": "Lovin' Bowl Chicken Dehydrated 32oz", "sku": "LB-CHKN-DH-32", "size": "32oz", "weight": 2.0, "price": 29.00 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lamb",
+      "slug": "lamb",
+      "subcategories": [
+        {
+          "name": "Regular",
+          "slug": "lamb-regular",
+          "products": [
+            { "name": "Lovin' Bowl Lamb Regular 16oz", "sku": "LB-LAMB-REG-16", "size": "16oz", "weight": 1.0, "price": 15.00 },
+            { "name": "Lovin' Bowl Lamb Regular 32oz", "sku": "LB-LAMB-REG-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
+          ]
+        },
+        {
+          "name": "Puppy",
+          "slug": "lamb-puppy",
+          "products": [
+            { "name": "Lovin' Bowl Lamb Puppy 16oz", "sku": "LB-LAMB-PUP-16", "size": "16oz", "weight": 1.0, "price": 15.00 },
+            { "name": "Lovin' Bowl Lamb Puppy 32oz", "sku": "LB-LAMB-PUP-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
+          ]
+        },
+        {
+          "name": "Grain Free",
+          "slug": "lamb-grain-free",
+          "products": [
+            { "name": "Lovin' Bowl Lamb Grain Free 16oz", "sku": "LB-LAMB-GF-16", "size": "16oz", "weight": 1.0, "price": 15.00 },
+            { "name": "Lovin' Bowl Lamb Grain Free 32oz", "sku": "LB-LAMB-GF-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
+          ]
+        },
+        {
+          "name": "Dehydrated",
+          "slug": "lamb-dehydrated",
+          "products": [
+            { "name": "Lovin' Bowl Lamb Dehydrated 32oz", "sku": "LB-LAMB-DH-32", "size": "32oz", "weight": 2.0, "price": 30.00 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Salmon",
+      "slug": "salmon",
+      "subcategories": [
+        {
+          "name": "Regular",
+          "slug": "salmon-regular",
+          "products": [
+            { "name": "Lovin' Bowl Salmon Regular 16oz", "sku": "LB-SLMN-REG-16", "size": "16oz", "weight": 1.0, "price": 15.00 },
+            { "name": "Lovin' Bowl Salmon Regular 32oz", "sku": "LB-SLMN-REG-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
+          ]
+        },
+        {
+          "name": "Puppy",
+          "slug": "salmon-puppy",
+          "products": [
+            { "name": "Lovin' Bowl Salmon Puppy 16oz", "sku": "LB-SLMN-PUP-16", "size": "16oz", "weight": 1.0, "price": 15.00 },
+            { "name": "Lovin' Bowl Salmon Puppy 32oz", "sku": "LB-SLMN-PUP-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
+          ]
+        },
+        {
+          "name": "Grain Free",
+          "slug": "salmon-grain-free",
+          "products": [
+            { "name": "Lovin' Bowl Salmon Grain Free 16oz", "sku": "LB-SLMN-GF-16", "size": "16oz", "weight": 1.0, "price": 15.00 },
+            { "name": "Lovin' Bowl Salmon Grain Free 32oz", "sku": "LB-SLMN-GF-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
+          ]
+        },
+        {
+          "name": "Dehydrated",
+          "slug": "salmon-dehydrated",
+          "products": [
+            { "name": "Lovin' Bowl Salmon Dehydrated 32oz", "sku": "LB-SLMN-DH-32", "size": "32oz", "weight": 2.0, "price": 30.00 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pork",
+      "slug": "pork",
+      "subcategories": [
+        {
+          "name": "Regular",
+          "slug": "pork-regular",
+          "products": [
+            { "name": "Lovin' Bowl Pork Regular 16oz", "sku": "LB-PORK-REG-16", "size": "16oz", "weight": 1.0, "price": 15.00 },
+            { "name": "Lovin' Bowl Pork Regular 32oz", "sku": "LB-PORK-REG-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
+          ]
+        },
+        {
+          "name": "Puppy",
+          "slug": "pork-puppy",
+          "products": [
+            { "name": "Lovin' Bowl Pork Puppy 16oz", "sku": "LB-PORK-PUP-16", "size": "16oz", "weight": 1.0, "price": 15.00 },
+            { "name": "Lovin' Bowl Pork Puppy 32oz", "sku": "LB-PORK-PUP-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
+          ]
+        },
+        {
+          "name": "Grain Free",
+          "slug": "pork-grain-free",
+          "products": [
+            { "name": "Lovin' Bowl Pork Grain Free 16oz", "sku": "LB-PORK-GF-16", "size": "16oz", "weight": 1.0, "price": 15.00 },
+            { "name": "Lovin' Bowl Pork Grain Free 32oz", "sku": "LB-PORK-GF-32", "size": "32oz", "weight": 2.0, "price": 25.00 }
+          ]
+        },
+        {
+          "name": "Dehydrated",
+          "slug": "pork-dehydrated",
+          "products": [
+            { "name": "Lovin' Bowl Pork Dehydrated 32oz", "sku": "LB-PORK-DH-32", "size": "32oz", "weight": 2.0, "price": 30.00 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Treats",
+      "slug": "treats",
+      "subcategories": [],
+      "products": [
+        { "name": "Handmade Cookies - Chicken", "sku": "LB-TREAT-COOKIE-CHKN", "price": 8.00 },
+        { "name": "Handmade Cookies - Beef", "sku": "LB-TREAT-COOKIE-BEEF", "price": 8.00 },
+        { "name": "Pup Cake (Small)", "sku": "LB-TREAT-CAKE-SM", "price": 5.00 },
+        { "name": "Pup Cake (Large)", "sku": "LB-TREAT-CAKE-LG", "price": 7.00 }
+      ]
+    }
+  ]
+}

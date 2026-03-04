@@ -2,7 +2,7 @@
 
 This guide walks through creating the full product catalog in the Shift4Shop admin panel.
 
-## Category Hierarchy
+## Category Hierarchy (Diet-First)
 
 Create these categories in **Products → Categories → Add New**:
 
@@ -10,29 +10,31 @@ Create these categories in **Products → Categories → Add New**:
 
 | # | Category Name | URL Slug | Sort Order |
 |---|--------------|----------|------------|
-| 1 | Beef | beef | 1 |
-| 2 | Chicken | chicken | 2 |
-| 3 | Lamb | lamb | 3 |
-| 4 | Salmon | salmon | 4 |
-| 5 | Pork | pork | 5 |
-| 6 | Treats | treats | 6 |
+| 1 | Regular | regular | 1 |
+| 2 | Puppy | puppy | 2 |
+| 3 | Grain Free | grain-free | 3 |
+| 4 | Dehydrated | dehydrated | 4 |
+| 5 | Treats | treats | 5 |
+| 6 | Our Story | our-story | 6 |
 
-### Sub-Categories (4 per protein, 20 total)
+### Sub-Categories (5 per diet, 20 total)
 
-For **each** protein category (Beef, Chicken, Lamb, Salmon, Pork), create these sub-categories:
+For **each** diet category (Regular, Puppy, Grain Free, Dehydrated), create these protein sub-categories:
 
 | Sub-Category | Parent | URL Slug Pattern |
 |-------------|--------|------------------|
-| Regular | {Protein} | {protein}-regular |
-| Puppy | {Protein} | {protein}-puppy |
-| Grain Free | {Protein} | {protein}-grain-free |
-| Dehydrated | {Protein} | {protein}-dehydrated |
+| Beef | {Diet} | beef-{diet} |
+| Chicken | {Diet} | chicken-{diet} |
+| Lamb | {Diet} | lamb-{diet} |
+| Salmon | {Diet} | salmon-{diet} |
+| Pork | {Diet} | pork-{diet} |
 
-**Example for Beef:**
-- Beef > Regular → `beef-regular`
-- Beef > Puppy → `beef-puppy`
-- Beef > Grain Free → `beef-grain-free`
-- Beef > Dehydrated → `beef-dehydrated`
+**Example for Regular:**
+- Regular > Beef → `beef-regular`
+- Regular > Chicken → `chicken-regular`
+- Regular > Lamb → `lamb-regular`
+- Regular > Salmon → `salmon-regular`
+- Regular > Pork → `pork-regular`
 
 ---
 
@@ -206,9 +208,9 @@ Go to **Products → Add New Product** for each:
 In **Settings → Design → Themes → Settings:**
 
 1. Enable "Category Navigation" display
-2. Set max displayed categories to **7** (5 proteins + Treats + Our Story)
-3. Enable sub-category dropdowns
-4. Verify the category nav bar renders all proteins with dropdown sub-categories
+2. Set max displayed categories to **6** (Regular, Puppy, Grain Free, Dehydrated, Treats, Our Story)
+3. Enable sub-category dropdowns — each diet shows its 5 protein children
+4. Verify the nav bar renders as: `Regular | Puppy | Grain Free | Dehydrated | Treats | Our Story`
 
 ---
 
